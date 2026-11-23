@@ -1,0 +1,1 @@
+{"agentType":"general-purpose","isBuiltIn":true,"description":"Run hash command via Bash","toolUseId":"toolu_01LNqLQNs9Uu9CtYZUWRNQUX","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-haiku-5-5","pickedEffortModel":"claude-haiku-5-5","finished":true}

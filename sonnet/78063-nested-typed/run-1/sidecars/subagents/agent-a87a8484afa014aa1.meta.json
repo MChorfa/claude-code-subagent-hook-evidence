@@ -1,0 +1,1 @@
+{"agentType":"general-purpose","isBuiltIn":true,"description":"Run shasum command","toolUseId":"toolu_01AKbnr5nkEN64n56jdm1itp","parentAgentId":"a99831d7e8a0fba59","spawnDepth":2,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","finished":true}

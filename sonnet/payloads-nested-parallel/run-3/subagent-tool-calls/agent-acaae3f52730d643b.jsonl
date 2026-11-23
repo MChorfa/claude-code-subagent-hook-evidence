@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_012L23G7EutR236uWDpWF3TZ","name":"Read","input":{"file_path":"$TMPDIR/dg-upstream.Wqez8L/payloads-nested-parallel/file.txt"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"tool_use_id":"toolu_012L23G7EutR236uWDpWF3TZ","type":"tool_result","content":"1\tfirst line of file.txt\n2\tsecond line\n3\t"}]}

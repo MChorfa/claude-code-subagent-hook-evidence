@@ -1,0 +1,1 @@
+{"agentType":"workflow-subagent","isBuiltIn":true,"description":"run-shasum","workflowPhase":"Run","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","inWorkflowRun":true}

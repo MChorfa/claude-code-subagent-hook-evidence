@@ -1,0 +1,1 @@
+{"agentType":"Explore","isBuiltIn":true,"description":"Read file.txt first line","toolUseId":"toolu_014n6KfPx7ZAjiVrYQFJdc53","parentAgentId":"aefc693f472102126","spawnDepth":2,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","finished":true}

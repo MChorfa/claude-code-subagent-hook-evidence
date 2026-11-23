@@ -1,0 +1,38 @@
+{
+  "experiment": "79953-workflow-child-deny",
+  "claude_code": "2.1.330 (Claude Code)",
+  "kernel": "Darwin 27.3.0 arm64",
+  "os_version": "27.3",
+  "started": "2026-11-23T14:26:23Z",
+  "probe_command": "printf dg-1dd610b7a85cfa1c | shasum -a 256 | cut -c1-16",
+  "expected_output": "01f5bd0e61d69b2a",
+  "hook_mode": "exit2-subagent-bash",
+  "permission_mode": "bypassPermissions",
+  "model_alias": "sonnet",
+  "exit_status": 0,
+  "argv": [
+    "claude",
+    "-p",
+    "I explicitly ask you to run a workflow. Call the Workflow tool with an inline script that makes exactly one agent() call. That agent's prompt: 'Run this exact shell command with your Bash tool and report the output verbatim: printf dg-1dd610b7a85cfa1c | shasum -a 256 | cut -c1-16'. Do not use the Agent tool and do not run the command yourself.",
+    "--model",
+    "sonnet",
+    "--permission-mode",
+    "bypassPermissions",
+    "--setting-sources",
+    "project,local",
+    "--settings",
+    "<repo>/evidence/upstream-v2/raw/sonnet/79953-workflow-child-deny/run-3/settings.json",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<repo>/evidence/upstream-v2/raw/sonnet/79953-workflow-child-deny/run-3/no-mcp.json",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--include-hook-events",
+    "--max-turns",
+    "15"
+  ],
+  "project_files": [
+    "file.txt"
+  ]
+}

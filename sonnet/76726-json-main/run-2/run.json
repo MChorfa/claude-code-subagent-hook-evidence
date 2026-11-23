@@ -1,0 +1,38 @@
+{
+  "experiment": "76726-json-main",
+  "claude_code": "2.1.330 (Claude Code)",
+  "kernel": "Darwin 27.3.0 arm64",
+  "os_version": "27.3",
+  "started": "2026-11-23T14:25:13Z",
+  "probe_command": "printf dg-2e4edbe07e74192a | shasum -a 256 | cut -c1-16",
+  "expected_output": "3e26046579f0071f",
+  "hook_mode": "json-main-write",
+  "permission_mode": "bypassPermissions",
+  "model_alias": "sonnet",
+  "exit_status": 0,
+  "argv": [
+    "claude",
+    "-p",
+    "Create the file probe-2e4edbe07e74192a.txt containing the word written, using your Write tool.",
+    "--model",
+    "sonnet",
+    "--permission-mode",
+    "bypassPermissions",
+    "--setting-sources",
+    "project,local",
+    "--settings",
+    "<repo>/evidence/upstream-v2/raw/sonnet/76726-json-main/run-2/settings.json",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<repo>/evidence/upstream-v2/raw/sonnet/76726-json-main/run-2/no-mcp.json",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--include-hook-events",
+    "--max-turns",
+    "15"
+  ],
+  "project_files": [
+    "file.txt"
+  ]
+}

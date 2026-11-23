@@ -1,0 +1,38 @@
+{
+  "experiment": "76726-json-subagent",
+  "claude_code": "2.1.330 (Claude Code)",
+  "kernel": "Darwin 27.3.0 arm64",
+  "os_version": "27.3",
+  "started": "2026-11-23T14:25:13Z",
+  "probe_command": "printf dg-a5eae97a0779b94b | shasum -a 256 | cut -c1-16",
+  "expected_output": "a4fa714a9c999cb0",
+  "hook_mode": "json-subagent-write",
+  "permission_mode": "bypassPermissions",
+  "model_alias": "sonnet",
+  "exit_status": 0,
+  "argv": [
+    "claude",
+    "-p",
+    "Use the Agent tool to dispatch one general-purpose subagent in the foreground. Have that subagent create the file probe-a5eae97a0779b94b.txt containing the word written, using its Write tool. Do not write the file yourself.",
+    "--model",
+    "sonnet",
+    "--permission-mode",
+    "bypassPermissions",
+    "--setting-sources",
+    "project,local",
+    "--settings",
+    "<repo>/evidence/upstream-v2/raw/sonnet/76726-json-subagent/run-2/settings.json",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<repo>/evidence/upstream-v2/raw/sonnet/76726-json-subagent/run-2/no-mcp.json",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--include-hook-events",
+    "--max-turns",
+    "15"
+  ],
+  "project_files": [
+    "file.txt"
+  ]
+}

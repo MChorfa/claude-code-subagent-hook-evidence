@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_01MKG2tpFj9Kwm2BtnwtDcrA","name":"Bash","input":{"command":"printf dg-7dfa4b948346f018 | shasum -a 256 | cut -c1-16"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"type":"tool_result","content":"<tool_use_error>Error: No such tool available: Bash. Bash is disabled for this session, in subagents as well as here.</tool_use_error>","is_error":true,"tool_use_id":"toolu_01MKG2tpFj9Kwm2BtnwtDcrA"}]}

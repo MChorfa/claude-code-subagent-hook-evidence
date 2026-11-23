@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_01Kz39SVkrBkDwjGRFTKv9Um","name":"Write","input":{"file_path":"$TMPDIR/dg-upstream.rZdMtf/76726-json-fanout/probe-b-6963a5f70e211e09.txt","content":"written"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"type":"tool_result","content":"PreToolUse:Write hook error: upstream-repro hook: Write denied inside a subagent","is_error":true,"tool_use_id":"toolu_01Kz39SVkrBkDwjGRFTKv9Um"}]}

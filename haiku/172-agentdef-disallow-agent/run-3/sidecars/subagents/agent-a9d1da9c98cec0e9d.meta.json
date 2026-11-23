@@ -1,0 +1,1 @@
+{"agentType":"probe","isBuiltIn":false,"description":"Probe tool list and nested dispatch","toolUseId":"toolu_01Un1kQGrXoQLEr79NoeyC1g","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-haiku-5-5","pickedEffortModel":"claude-haiku-5-5","finished":true}

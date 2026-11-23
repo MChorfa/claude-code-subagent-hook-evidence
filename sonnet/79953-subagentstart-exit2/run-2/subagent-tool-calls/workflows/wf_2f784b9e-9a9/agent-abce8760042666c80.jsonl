@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_01Pp5t6bFXwSCZZ5afuCmzSa","name":"Bash","input":{"command":"printf dg-0e89106b6f5d8e92 | shasum -a 256 | cut -c1-16","description":"Compute truncated SHA-256 hash"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"tool_use_id":"toolu_01Pp5t6bFXwSCZZ5afuCmzSa","type":"tool_result","content":"5ba2df6e2fca87cb","is_error":false}]}

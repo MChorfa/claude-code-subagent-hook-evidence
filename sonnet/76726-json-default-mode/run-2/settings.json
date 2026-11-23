@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh json-subagent-write <repo>/evidence/upstream-v2/raw/sonnet/76726-json-default-mode/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh json-subagent-write <repo>/evidence/upstream-v2/raw/sonnet/76726-json-default-mode/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh json-subagent-write <repo>/evidence/upstream-v2/raw/sonnet/76726-json-default-mode/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh json-subagent-write <repo>/evidence/upstream-v2/raw/sonnet/76726-json-default-mode/run-2/hooks.d"
+          }
+        ]
+      }
+    ]
+  }
+}

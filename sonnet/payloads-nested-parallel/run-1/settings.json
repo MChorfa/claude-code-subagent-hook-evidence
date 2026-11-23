@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh log <repo>/evidence/upstream-v2/raw/sonnet/payloads-nested-parallel/run-1/hooks.d"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh log <repo>/evidence/upstream-v2/raw/sonnet/payloads-nested-parallel/run-1/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh log <repo>/evidence/upstream-v2/raw/sonnet/payloads-nested-parallel/run-1/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh log <repo>/evidence/upstream-v2/raw/sonnet/payloads-nested-parallel/run-1/hooks.d"
+          }
+        ]
+      }
+    ]
+  }
+}

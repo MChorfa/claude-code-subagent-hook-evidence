@@ -1,0 +1,110 @@
+{
+  "experiment": "78063-agentdef-none",
+  "claude_code": "2.1.330 (Claude Code)",
+  "os_version": "27.3",
+  "kernel": "Darwin 27.3.0 arm64",
+  "model": "claude-sonnet-5-5",
+  "permission_mode": "bypassPermissions",
+  "hook_mode": "log",
+  "exit_status": 0,
+  "main_tools_include": {
+    "Bash": true,
+    "Agent": true,
+    "Write": true
+  },
+  "plugins": [
+    "cc-plugin-agents-md@builtin",
+    "cc-plugin-privacy@builtin",
+    "cc-plugin-plugin-authoring@builtin"
+  ],
+  "hooks_run": [
+    {
+      "name": "PostToolUse:Agent",
+      "n": 1
+    },
+    {
+      "name": "PostToolUse:Bash",
+      "n": 1
+    },
+    {
+      "name": "PreToolUse:Agent",
+      "n": 1
+    },
+    {
+      "name": "PreToolUse:Bash",
+      "n": 1
+    },
+    {
+      "name": "SubagentStart:general-purpose",
+      "n": 1
+    },
+    {
+      "name": "SubagentStop",
+      "n": 1
+    }
+  ],
+  "agent_calls": [
+    {
+      "where": "main",
+      "tool": "Agent",
+      "subagent_type": "general-purpose",
+      "run_in_background": false
+    }
+  ],
+  "subagent_starts": [
+    "general-purpose"
+  ],
+  "sidecar_at_subagent_start": [
+    {
+      "agent_type": "general-purpose",
+      "exists": false,
+      "toolUseId": false,
+      "parentAgentId": false
+    }
+  ],
+  "sidecar_at_first_tool": [
+    {
+      "agent_type": "general-purpose",
+      "exists": true,
+      "toolUseId": true,
+      "parentAgentId": false
+    }
+  ],
+  "sidecars_final": [
+    {
+      "file": "subagents/agent-a9ed57d13166d4b49.meta.json",
+      "spawnDepth": 1,
+      "agentType": "general-purpose",
+      "inWorkflowRun": false,
+      "toolUseId": "matches the Agent call that returned this agentId",
+      "parentAgentId": false,
+      "description": true
+    }
+  ],
+  "session_ids": 1,
+  "session_id_is_main": true,
+  "prompt_ids": 1,
+  "subagent_events_with_agent_id": 4,
+  "denials": [],
+  "project_files": [
+    "file.txt"
+  ],
+  "verdict": {
+    "bash_ok_subagent": 1,
+    "bash_ok_main": 0,
+    "bash_attempt_subagent": 1,
+    "write_attempt_subagent": 0,
+    "write_ok_subagent": 0,
+    "write_attempt_main": 0,
+    "probe_files_left": 0,
+    "agent_pretooluse": 1,
+    "workflow_pretooluse": 0,
+    "subagent_start": 1,
+    "denials_subagent": 0,
+    "denials_main": 0,
+    "denials_unknown": 0,
+    "result_errors": 0,
+    "bash_tool_use_in_subagent_transcripts": 1,
+    "bash_refused_as_unavailable": 0
+  }
+}

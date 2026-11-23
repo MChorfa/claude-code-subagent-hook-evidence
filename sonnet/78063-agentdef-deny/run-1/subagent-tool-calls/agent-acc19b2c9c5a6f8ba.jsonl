@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_01TqpuLXTiDRaaiaU9KDVo36","name":"Bash","input":{"command":"printf dg-adfa7a89345f3853 | shasum -a 256 | cut -c1-16"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"tool_use_id":"toolu_01TqpuLXTiDRaaiaU9KDVo36","type":"tool_result","content":"cb156ae00ab995f7","is_error":false}]}

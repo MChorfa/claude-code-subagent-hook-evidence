@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh exit2-agent <repo>/evidence/upstream-v2/raw/sonnet/79953-direct-agent-deny/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh exit2-agent <repo>/evidence/upstream-v2/raw/sonnet/79953-direct-agent-deny/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh exit2-agent <repo>/evidence/upstream-v2/raw/sonnet/79953-direct-agent-deny/run-2/hooks.d"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo>/scripts/upstream-hook.sh exit2-agent <repo>/evidence/upstream-v2/raw/sonnet/79953-direct-agent-deny/run-2/hooks.d"
+          }
+        ]
+      }
+    ]
+  }
+}

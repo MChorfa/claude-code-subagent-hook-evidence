@@ -1,0 +1,1 @@
+{"agentType":"general-purpose","isBuiltIn":true,"description":"Run sha256 shell command","toolUseId":"toolu_01Ax8sp9NTREoinaVCiamsuB","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","finished":true}

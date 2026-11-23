@@ -1,0 +1,1 @@
+{"agentType":"general-purpose","isBuiltIn":true,"description":"Run shell hash command","toolUseId":"toolu_01Py5K6Tet9aMwhzgLqUSiZ7","parentAgentId":"a8b5a1d929ec9d974","spawnDepth":2,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","finished":true}

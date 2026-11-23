@@ -1,0 +1,40 @@
+{
+  "experiment": "78063-nested-readonly",
+  "claude_code": "2.1.330 (Claude Code)",
+  "kernel": "Darwin 27.3.0 arm64",
+  "os_version": "27.3",
+  "started": "2026-11-23T14:24:24Z",
+  "probe_command": "printf dg-89ddab2b4f99f40c | shasum -a 256 | cut -c1-16",
+  "expected_output": "d585e677e585afe8",
+  "hook_mode": "log",
+  "permission_mode": "bypassPermissions",
+  "model_alias": "sonnet",
+  "exit_status": 0,
+  "argv": [
+    "claude",
+    "-p",
+    "Use the Agent tool to dispatch the reviewer subagent in the foreground. Tell the reviewer to dispatch, with its own Agent tool, one general-purpose subagent in the foreground that will run this exact shell command with its Bash tool and report the output verbatim: printf dg-89ddab2b4f99f40c | shasum -a 256 | cut -c1-16 . Neither you nor the reviewer may run the command.",
+    "--agents",
+    "{\"reviewer\":{\"description\":\"Read-only reviewer\",\"prompt\":\"You are a read-only reviewer.\",\"tools\":[\"Read\",\"Agent\"]}}",
+    "--model",
+    "sonnet",
+    "--permission-mode",
+    "bypassPermissions",
+    "--setting-sources",
+    "project,local",
+    "--settings",
+    "<repo>/evidence/upstream-v2/raw/sonnet/78063-nested-readonly/run-3/settings.json",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<repo>/evidence/upstream-v2/raw/sonnet/78063-nested-readonly/run-3/no-mcp.json",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--include-hook-events",
+    "--max-turns",
+    "15"
+  ],
+  "project_files": [
+    "file.txt"
+  ]
+}

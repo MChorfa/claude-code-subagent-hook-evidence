@@ -1,0 +1,1 @@
+{"agentType":"general-purpose","isBuiltIn":true,"description":"Run sha256 hash command","toolUseId":"toolu_01F5rvWAoEmG8d6kUoVR55Pe","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-haiku-5-5","pickedEffortModel":"claude-haiku-5-5","finished":true}

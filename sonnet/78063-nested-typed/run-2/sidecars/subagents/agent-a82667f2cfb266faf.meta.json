@@ -1,0 +1,1 @@
+{"agentType":"reviewer","isBuiltIn":false,"description":"Dispatch reviewer subagent","toolUseId":"toolu_01SpRsRX4gNZ4e7gsUd8pvFR","spawnDepth":1,"requestShape":"foreground","requestNonInteractive":true,"model":"claude-sonnet-5-5","pickedEffortModel":"claude-sonnet-5-5","finished":true}

@@ -1,0 +1,2 @@
+{"type":"assistant","parent_tool_use_id":null,"content":[{"type":"tool_use","id":"toolu_01FWY7AxUneRJPbDJEZb9gcH","name":"Bash","input":{"command":"printf dg-97dd6b8879677d61 | shasum -a 256 | cut -c1-16","description":"Compute truncated SHA-256 of string"},"caller":{"type":"direct"}}]}
+{"type":"user","parent_tool_use_id":null,"content":[{"type":"tool_result","content":"Permission to use Bash with command printf dg-97dd6b8879677d61 has been denied.","is_error":true,"tool_use_id":"toolu_01FWY7AxUneRJPbDJEZb9gcH"}]}

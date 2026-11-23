@@ -1,0 +1,170 @@
+{
+  "experiment": "payloads-nested-parallel",
+  "claude_code": "2.1.330 (Claude Code)",
+  "os_version": "27.3",
+  "kernel": "Darwin 27.3.0 arm64",
+  "model": "claude-sonnet-5-5",
+  "permission_mode": "bypassPermissions",
+  "hook_mode": "log",
+  "exit_status": 0,
+  "main_tools_include": {
+    "Bash": true,
+    "Agent": true,
+    "Write": true
+  },
+  "plugins": [
+    "cc-plugin-agents-md@builtin",
+    "cc-plugin-privacy@builtin",
+    "cc-plugin-plugin-authoring@builtin"
+  ],
+  "hooks_run": [
+    {
+      "name": "PostToolUse:Agent",
+      "n": 3
+    },
+    {
+      "name": "PostToolUse:Read",
+      "n": 2
+    },
+    {
+      "name": "PreToolUse:Agent",
+      "n": 3
+    },
+    {
+      "name": "PreToolUse:Read",
+      "n": 2
+    },
+    {
+      "name": "SubagentStart:Explore",
+      "n": 1
+    },
+    {
+      "name": "SubagentStart:general-purpose",
+      "n": 2
+    },
+    {
+      "name": "SubagentStop",
+      "n": 3
+    }
+  ],
+  "agent_calls": [
+    {
+      "where": "main",
+      "tool": "Agent",
+      "subagent_type": "general-purpose",
+      "run_in_background": false
+    },
+    {
+      "where": "main",
+      "tool": "Agent",
+      "subagent_type": "general-purpose",
+      "run_in_background": false
+    },
+    {
+      "where": "subagent",
+      "tool": "Agent",
+      "subagent_type": "Explore",
+      "run_in_background": false
+    }
+  ],
+  "subagent_starts": [
+    "general-purpose",
+    "general-purpose",
+    "Explore"
+  ],
+  "sidecar_at_subagent_start": [
+    {
+      "agent_type": "general-purpose",
+      "exists": false,
+      "toolUseId": false,
+      "parentAgentId": false
+    },
+    {
+      "agent_type": "general-purpose",
+      "exists": false,
+      "toolUseId": false,
+      "parentAgentId": false
+    },
+    {
+      "agent_type": "Explore",
+      "exists": false,
+      "toolUseId": false,
+      "parentAgentId": false
+    }
+  ],
+  "sidecar_at_first_tool": [
+    {
+      "agent_type": "general-purpose",
+      "exists": true,
+      "toolUseId": true,
+      "parentAgentId": false
+    },
+    {
+      "agent_type": "Explore",
+      "exists": true,
+      "toolUseId": true,
+      "parentAgentId": true
+    },
+    {
+      "agent_type": "general-purpose",
+      "exists": true,
+      "toolUseId": true,
+      "parentAgentId": false
+    }
+  ],
+  "sidecars_final": [
+    {
+      "file": "subagents/agent-a53e767dcc2878a3c.meta.json",
+      "spawnDepth": 1,
+      "agentType": "general-purpose",
+      "inWorkflowRun": false,
+      "toolUseId": "matches the Agent call that returned this agentId",
+      "parentAgentId": false,
+      "description": true
+    },
+    {
+      "file": "subagents/agent-a6c4a374805dc5aac.meta.json",
+      "spawnDepth": 2,
+      "agentType": "Explore",
+      "inWorkflowRun": false,
+      "toolUseId": "matches the Agent call that returned this agentId",
+      "parentAgentId": true,
+      "description": true
+    },
+    {
+      "file": "subagents/agent-acaae3f52730d643b.meta.json",
+      "spawnDepth": 1,
+      "agentType": "general-purpose",
+      "inWorkflowRun": false,
+      "toolUseId": "matches the Agent call that returned this agentId",
+      "parentAgentId": false,
+      "description": true
+    }
+  ],
+  "session_ids": 1,
+  "session_id_is_main": true,
+  "prompt_ids": 1,
+  "subagent_events_with_agent_id": 12,
+  "denials": [],
+  "project_files": [
+    "file.txt"
+  ],
+  "verdict": {
+    "bash_ok_subagent": 0,
+    "bash_ok_main": 0,
+    "bash_attempt_subagent": 0,
+    "write_attempt_subagent": 0,
+    "write_ok_subagent": 0,
+    "write_attempt_main": 0,
+    "probe_files_left": 0,
+    "agent_pretooluse": 3,
+    "workflow_pretooluse": 0,
+    "subagent_start": 3,
+    "denials_subagent": 0,
+    "denials_main": 0,
+    "denials_unknown": 0,
+    "result_errors": 0,
+    "bash_tool_use_in_subagent_transcripts": 0,
+    "bash_refused_as_unavailable": 0
+  }
+}

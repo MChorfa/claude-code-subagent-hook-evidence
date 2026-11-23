@@ -1,0 +1,42 @@
+{
+  "experiment": "78063-agentdef-none",
+  "claude_code": "2.1.330 (Claude Code)",
+  "kernel": "Darwin 27.3.0 arm64",
+  "os_version": "27.3",
+  "started": "2026-11-23T14:23:40Z",
+  "probe_command": "printf dg-d5ae3df909443256 | shasum -a 256 | cut -c1-16",
+  "expected_output": "de8ac6bcf7ef3939",
+  "hook_mode": "log",
+  "permission_mode": "bypassPermissions",
+  "model_alias": "sonnet",
+  "exit_status": 0,
+  "argv": [
+    "claude",
+    "-p",
+    "Use the Agent tool to dispatch one general-purpose subagent in the foreground. Have that subagent run this exact shell command with its Bash tool and report the output verbatim: printf dg-d5ae3df909443256 | shasum -a 256 | cut -c1-16 . Do not run the command yourself.",
+    "--agents",
+    "{\"conf\":{\"description\":\"Test\",\"prompt\":\"Test agent.\"}}",
+    "--agent",
+    "conf",
+    "--model",
+    "sonnet",
+    "--permission-mode",
+    "bypassPermissions",
+    "--setting-sources",
+    "project,local",
+    "--settings",
+    "<repo>/evidence/upstream-v2/raw/sonnet/78063-agentdef-none/run-3/settings.json",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "<repo>/evidence/upstream-v2/raw/sonnet/78063-agentdef-none/run-3/no-mcp.json",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--include-hook-events",
+    "--max-turns",
+    "15"
+  ],
+  "project_files": [
+    "file.txt"
+  ]
+}
